@@ -1,0 +1,209 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  /* Container Styling */
+  .cv-container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cv-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+  }
+  
+  .personal-info {
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  .personal-info h1 {
+    font-size: 2.5em;
+    color: #007bff;
+  }
+  
+  .personal-info .job-title {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Section Styling */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  ul li p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Proiecte */
+/* Secțiune Proiecte */
+.projects {
+    margin-bottom: 40px;
+  }
+  
+  .project-carousel {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card h3 {
+    font-size: 1.8em;
+    color: #007bff;
+  }
+  
+  .project-card p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pentru a face caruselul responsiv */
+  @media (max-width: 768px) {
+    .project-carousel {
+      flex-direction: column;
+    }
+  }
+  
+  /* Section Rețele Sociale */
+.social {
+    margin-bottom: 40px;
+  }
+  
+  .social h2 {
+    font-size: 2em;
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icons img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
